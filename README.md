@@ -18,7 +18,7 @@ Please be understanding as this is only a College projects, I don't use hosting 
 ## Double Diamond
 
 Double diamond is a method for discover, define, develop, and deliver Interaction Design.
--[Double diamond Material](https://medium.com/@aliciaandres/luxury-hotel-app-to-offer-local-experiences-ux-case-study-9acebae41bc4)
+- [Double diamond Material](https://medium.com/@aliciaandres/luxury-hotel-app-to-offer-local-experiences-ux-case-study-9acebae41bc4)
 
 At the discover step, we choose ***Octave*** as the application name, as it has some connection to Music.
 - Stress is a common thing for people at all age and gender, which is why we choose Music app to help
@@ -27,7 +27,7 @@ At the discover step, we choose ***Octave*** as the application name, as it has 
 - Color pallete : Dark Navy, Light Grey, Maroon, Pink.
 
 At the Define step, we choose Remote Conversation for sharing and chatting about Music.
--[Octave Prototype Design v.1](https://www.figma.com/file/nyjNmvCBu65wzbnR3OcmEp/Octave-v.0.2?node-id=0%3A1&t=WdADZ80wetWKSnUq-0)
+- [Octave Prototype Design v.1](https://www.figma.com/file/nyjNmvCBu65wzbnR3OcmEp/Octave-v.0.2?node-id=0%3A1&t=WdADZ80wetWKSnUq-0)
     
 There are 4 Interface that we use as of now in the app :
 1. Command Interface   -> search music in the search bar.
