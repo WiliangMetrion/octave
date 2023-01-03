@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Login/login.dart';
+import 'View/login.dart';
 
 void main() => runApp(const Octave());
 

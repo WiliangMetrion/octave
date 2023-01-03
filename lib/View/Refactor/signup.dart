@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:octave/Register/builder/password_form.dart';
-import 'package:path/path.dart';
-import '../viewmodel/signup_model.dart';
-import 'username_form.dart';
+import 'package:octave/View/Form/password_form.dart';
+import '../../ViewModel/signup_model.dart';
+import '../Form/username_form.dart';
 
 class SignUpForm extends StatefulWidget {
   final GlobalKey<FormState> formKey;

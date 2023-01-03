@@ -1,6 +1,7 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:octave/Register/builder/signup.dart';
-import 'package:octave/Register/viewmodel/signup_model.dart';
+import 'package:octave/View/Refactor/signup.dart';
+import 'package:octave/ViewModel/signup_model.dart';
 
 import '../utils/custom_button_submit.dart';
 
@@ -59,9 +60,12 @@ class _RegisterState extends State<Register> {
                     var isValid = formKey.currentState!.validate();
                     assert(isValid == viewModel.isValid(),
                         'The view model and form must agree wether the form is valid');
+                    if (kDebugMode) {
+                      print("SingUp valid : $isValid\n$viewModel");
+                    }
 
-                    print("SingUp valid : $isValid\n$viewModel");
-                    print(viewModel.username);
+                    viewModel.createUser(
+                        viewModel.username!, viewModel.password!);
                   }),
               CustomButtonSubmit(
                   name: 'Back', onTap: () => Navigator.pop(context))

@@ -1,8 +1,11 @@
 import 'package:octave/utils/stringext.dart';
 
+import '../Model/register_model.dart';
+
 class SignUpViewModel {
   final String? username;
   final String? password;
+  dynamic getData;
 
   SignUpViewModel(this.username, this.password);
 
@@ -15,24 +18,26 @@ class SignUpViewModel {
 
   bool isValid() => userIsValid && passwordIsValid;
 
+  createUser(String username, String password) async {
+    await RegisterModel.register(username, password);
+  }
+
   String? userValidator(String? username) {
     if (username == null || username.isWhiteSpace()) {
       return 'Please input your username';
     }
-
     if (!username.isValidName()) {
-      return 'Please only input alphabet for username';
+      return 'Username only consist of Alphabet';
     }
     return null;
   }
 
   String? passwordValidator(String? password) {
     if (password == null || password.isWhiteSpace()) {
-      return 'Please input your password';
+      return "Please input your password";
     }
-
     if (!password.isValidPassword()) {
-      return 'Your password has be more than 10 digits';
+      return "Invalid password format";
     }
     return null;
   }
